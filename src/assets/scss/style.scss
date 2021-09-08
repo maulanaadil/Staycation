@@ -79,10 +79,14 @@ header {
           padding-right: 1rem;
           &:hover {
             text-decoration: underline;
-            text-underline-offset: inherit;
           }
         }
       }
     }
   }
+}
+
+.image-hero {
+  width: 520px;
+  height: 410px;
 }
