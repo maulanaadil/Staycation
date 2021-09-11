@@ -1,34 +1,32 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
+import Star from "./index";
 
-import Button from "./index";
-
-test("Should not allowed click button if isDisabled is present", () => {
-  const { container } = render(<Button isDisabled></Button>);
-
-  expect(container.querySelector("span.disabled")).toBeInTheDocument();
-});
-
-test("Should render loading/spinner", () => {
-  const { container, getByText } = render(<Button isLoading></Button>);
-
-  expect(getByText(/loading/i)).toBeInTheDocument();
-  expect(container.querySelector("span")).toBeInTheDocument();
-});
-
-test("Should render <a> tag", () => {
-  const { container } = render(<Button type="link" isExternal></Button>);
-
-  expect(container.querySelector("a")).toBeInTheDocument();
-});
-
-test("Should render <Link> component", () => {
+test("Should have props [value, height, width, spacing", () => {
+  const height = 40,
+    width = 40,
+    spacing = 4;
   const { container } = render(
-    <Router>
-      <Button href="" type="link"></Button>
-    </Router>
+    <Star width={width} height={height} spacing={spacing} value={3.6} />
   );
+  const starYellow = "div.stars div.star:not(.placeholder)";
 
-  expect(container.querySelector("a")).toBeInTheDocument();
+  expect(container.querySelector("div.stars")).toBeInTheDocument();
+  expect(container.querySelector("div.stars")).toHaveAttribute(
+    "style",
+    expect.stringContaining(`height: ${height}px`)
+  );
+  expect(container.querySelector(starYellow)).toBeInTheDocument();
+  expect(container.querySelector(starYellow)).toHaveAttribute(
+    "style",
+    expect.stringContaining(`width: ${width}px`)
+  );
+  expect(container.querySelector(starYellow)).toHaveAttribute(
+    "style",
+    expect.stringContaining(`height: ${height}px`)
+  );
+  expect(container.querySelector(starYellow)).toHaveAttribute(
+    "style",
+    expect.stringContaining(`margin-right: ${spacing}px`)
+  );
 });
