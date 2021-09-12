@@ -1,18 +1,24 @@
+import Breadcrumb from "elements/Breadcrumb";
 import React, { Component } from "react";
 
 export default class Example extends Component {
-  state = {
-    value: {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  };
+  // state = {
+  //   value: {
+  //     startDate: new Date(),
+  //     endDate: new Date(),
+  //     key: "selection",
+  //   },
+  // };
 
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+  // handleChange = (e) => {
+  //   this.setState({ [e.target.name]: e.target.value });
+  // };
   render() {
+    const breadcrumbList = [
+      { pageTitle: "Home", pageHref: "/" },
+      { pageTitle: "House Details", pageHref: "" },
+    ];
+
     return (
       <div className="container">
         <div
@@ -21,6 +27,7 @@ export default class Example extends Component {
         >
           <div className="col-auto">
             {/* Isi Component yang mau dilihat sesudah ditest */}
+            <Breadcrumb data={breadcrumbList} />
           </div>
         </div>
       </div>
