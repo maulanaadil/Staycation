@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import InputNumber from "elements/Form/InputNumber";
 
 export default class Example extends Component {
   state = {
-    value: "1",
+    value: {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
   };
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
-
   render() {
     return (
       <div className="container">
@@ -18,15 +20,7 @@ export default class Example extends Component {
           style={{ height: "100vh" }}
         >
           <div className="col-auto">
-            <InputNumber
-              max={30}
-              min={1}
-              isSuffixPlural
-              suffix=" night"
-              onChange={this.handleChange}
-              name="value"
-              value={this.state.value}
-            />
+            {/* Isi Component yang mau dilihat sesudah ditest */}
           </div>
         </div>
       </div>
