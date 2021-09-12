@@ -5,6 +5,7 @@ import { Router, Route, Switch } from "react-router-dom";
 import "assets/scss/style.scss";
 
 import LandingPage from "pages/LandingPage";
+import DetailsPage from "pages/DetailsPage";
 import Example from "pages/Example";
 
 const history = createBrowserHistory({
@@ -17,6 +18,7 @@ function App() {
       <Router history={history} basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={LandingPage} />
+          <Route exact path="/properties/:id" component={DetailsPage} />
           <Route path="/example" component={Example} />
         </Switch>
       </Router>
