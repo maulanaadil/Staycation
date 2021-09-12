@@ -6,6 +6,7 @@ import "assets/scss/style.scss";
 
 import LandingPage from "pages/LandingPage";
 import DetailsPage from "pages/DetailsPage";
+import CheckoutPage from "pages/CheckoutPage";
 import Example from "pages/Example";
 
 const history = createBrowserHistory({
@@ -19,6 +20,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/properties/:id" component={DetailsPage} />
+          <Route path="/checkout" component={CheckoutPage} />
           <Route path="/example" component={Example} />
         </Switch>
       </Router>
