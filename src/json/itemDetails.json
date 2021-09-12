@@ -1,7 +1,7 @@
 {
   "_id": "asd1293uasdads1",
-  "name": "Village Angga",
-  "type": "Hotel",
+  "name": "Pricilla Seneo",
+  "type": "House",
   "imageUrls": [
     {
       "_id": "asd1293uasdads1",
@@ -17,7 +17,7 @@
     }
   ],
   "country": "Indonesia",
-  "city": "Bogor",
+  "city": "Bali",
   "price": "52",
   "unit": "night",
   "isPopular": true,
@@ -76,64 +76,64 @@
   "activities": [
     {
       "_id": "asd1293uasdads1",
-      "name": "Kebun Park",
-      "type": "Nature",
-      "imageUrl": "/images/categoryItem1.png"
+      "name": "Lake Acadia",
+      "type": "Lake",
+      "imageUrl": "/images/treasure-1.jpg"
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Water land",
+      "name": "John Pool",
       "type": "Pool",
-      "imageUrl": "/images/categoryItem2.png"
+      "imageUrl": "/images/treasure-2.jpg"
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Kebun Park",
-      "type": "Nature",
-      "imageUrl": "/images/categoryItem3.png"
+      "name": "Courage Mall",
+      "type": "Mall",
+      "imageUrl": "/images/treasure-3.jpg"
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Water land",
-      "type": "Pool",
-      "imageUrl": "/images/categoryItem4.png"
+      "name": "Jeffrey Einsten",
+      "type": "Zoo Park",
+      "imageUrl": "/images/treasure-4.jpg"
     }
   ],
   "categories": [
     {
       "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
+      "name": "Things to do",
       "items": [
         {
           "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
+          "name": "Lake Acadia",
           "imageUrl": "/images/treasure-1.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Lake",
+          "city": "Bali",
           "isPopular": false
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
+          "name": "John Pool",
           "imageUrl": "/images/treasure-2.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Pool",
+          "city": "Bali",
           "isPopular": false
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
+          "name": "Courage Mall",
           "imageUrl": "/images/treasure-3.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Mall",
+          "city": "Bali",
           "isPopular": true
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
+          "name": "Jeffrey Einsten",
           "imageUrl": "/images/treasure-4.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Zoo Park",
+          "city": "Bali",
           "isPopular": false
         }
       ]
@@ -141,11 +141,11 @@
   ],
   "testimonial": {
     "_id": "asd1293uasdads1",
-    "imageUrl": "/images/testimonial-detailspage.jpg",
+    "imageUrl": "/images/testimonial-detailpages.jpg",
     "name": "Happy Family",
     "rate": 4.25,
-    "content": "What a great trip with my family and I should try again and again next time soon...",
-    "familyName": "Angga",
-    "familyOccupation": "UI Designer"
+    "content": "As wife i can pick a great trip with my own children, Thank you",
+    "familyName": "Shintya Farah",
+    "familyOccupation": "Product Manager"
   }
 }
