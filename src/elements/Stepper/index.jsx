@@ -14,7 +14,7 @@ export default function Stepper(props) {
   const indexStep = stepKeys.indexOf(CurrentStep);
 
   function prevStep() {
-    if (+indexStep > 0) CurrentStep(stepKeys[indexStep - 1]);
+    if (+indexStep > 0) setCurrentStep(stepKeys[indexStep - 1]);
   }
 
   function nextStep() {
@@ -28,3 +28,8 @@ Stepper.propTypes = {
   data: propTypes.object.isRequired,
   initialStep: propTypes.string,
 };
+
+export { default as Numbering } from "./Numbering";
+export { default as Meta } from "./Meta";
+export { default as Controller } from "./Controller";
+export { default as MainContent } from "./MainContent";
