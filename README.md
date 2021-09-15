@@ -1,6 +1,8 @@
 # Staycation
 
-This project was an a course Full-Stack Javascript Developer from [Buildwith Angga](https://buildwithangga.com/) and bootstrapped with [React App](https://github.com/facebook/create-react-app).
+This project base an a course Full-Stack Javascript Developer from [Buildwith Angga](https://buildwithangga.com/) 
+In this project there are several components that were changed according to the figma prototype that I designed
+and bootstrapped with [React App](https://github.com/facebook/create-react-app).
 
 ## Prototype
 
