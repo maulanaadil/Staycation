@@ -30,9 +30,12 @@ export default function BookingInformation(props) {
                     </div>
                   </div>
                   <div className="col-auto" style={{ marginTop: 15 }}>
-                    <span>
+                    <span className="h6" style={{ fontWeight: 500 }}>
                       ${+checkout.duration * ItemDetails.price} USD
-                      <span className="text-gray-500"> per </span>
+                      <span className="text-gray-500 font-weight-normal">
+                        {" "}
+                        per{" "}
+                      </span>
                       {checkout.duration} {ItemDetails.unit}
                       {+checkout.duration > 1 ? "s" : ""}
                     </span>
