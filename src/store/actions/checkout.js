@@ -1,4 +1,4 @@
-import { CHECKOUT_BOOKING } from "store/types";
+import { CHECKOUT_BOOKING } from "../types";
 
 export const checkoutBooking = (payload) => (dispatch) => {
   dispatch({
