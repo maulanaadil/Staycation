@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserHistory } from "history";
-// import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { Router, Route, Switch } from "react-router-dom";
 import "assets/scss/style.scss";
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/example" component={Example} />
         </Switch>
       </Router>
-      {/* <ToastContainer></ToastContainer> */}
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
